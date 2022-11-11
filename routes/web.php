@@ -31,7 +31,7 @@ Route::post('/login-success', function () {
 });
 
 
-Auth::routes();
+//Auth::routes();
 
 
 

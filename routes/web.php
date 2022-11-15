@@ -17,27 +17,13 @@ use \IMSGlobal\LTI;
 |
 */
 
-Route::post('lti-login', function () {
-	LTI\LTI_OIDC_Login::new(new \App\Database())
-		->do_oidc_login_redirect('http://lti-provider.localhost/login-success')
-		->do_redirect();
-});
+Route::post('lti-login', 'LTIController@login');
 
-Route::post('/login-success', function () {
-	$launch = LTI\LTI_Message_Launch::new(new \App\Database())->validate();
-	Log::info($launch->get_launch_data());
-	auth()->loginUsingId(1, true);
-	return view('welcome');
-});
-
+Route::post('/login-success', 'LTIController@handleRedirectAfterLogin');
 
 //Auth::routes();
 
-
-
 Route::middleware('auth')->group(function() {
-	Route::get('/lti-route', function () {
-		Log::info('Auth'. auth()->check());
-		return response()->json('ok');
-	});
+	Route::get('/greeting', 'LTIController@greeting');
+	Route::get('/quiz-configure', 'LTIController@quiz');
 });

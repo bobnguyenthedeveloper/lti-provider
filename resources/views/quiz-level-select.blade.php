@@ -65,29 +65,15 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
             <div class="content">
                 <div class="title m-b-md">
                     Select level
                 </div>
 
                 <div class="links">
-                    <a href="{{'/quiz?diff=easy'}}">Easy</a>
-                    <a href="https://laracasts.com">Medium</a>
-                    <a href="https://laravel-news.com">Hard</a>
+                    <a href="{{'/quiz-configure?level=easy&launch_id='.$launch_id}}">Easy</a>
+                    <a href="{{'/quiz-configure?level=medium&launch_id='.$launch_id}}">Medium</a>
+                    <a href="{{'/quiz-configure?level=hard&launch_id='.$launch_id}}">Hard</a>
                 </div>
             </div>
         </div>

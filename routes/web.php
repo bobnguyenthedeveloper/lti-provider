@@ -23,7 +23,12 @@ Route::post('/login-success', 'LTIController@handleRedirectAfterLogin');
 
 //Auth::routes();
 
-Route::middleware('auth')->group(function() {
-	Route::get('/greeting', 'LTIController@greeting');
-	Route::get('/quiz-configure', 'LTIController@quiz');
-});
+Route::get('/', 'LTIController@greeting');
+Route::get('/quiz-configure', 'LTIController@selectQuizLevel');
+Route::get('do-quiz', 'LTIController@doQuiz');
+Route::post('do-submit', 'LTIController@handleQuizSubmitted');
+Route::get('quiz-completed', 'LTIController@quizCompleted');
+
+//Route::middleware('auth')->group(function() {
+//
+//});

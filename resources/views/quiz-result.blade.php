@@ -61,24 +61,36 @@
         .m-b-md {
             margin-bottom: 30px;
         }
+
+        th, td {
+            padding: 15px;
+        }
     </style>
 </head>
 <body>
 <div class="flex-center position-ref full-height">
-    <div class="content">
-        <form action="/do-submit" method="post">
-            <input type="hidden" name="launch_id" value="{{$launch_id}}"/>
-        <p>Quiz is running in {{$level}} mode!</p>
-        Question:
-    @if($level === 'easy')
-        1 + 1 = <input name="ans"/>
-        @elseif($level === 'medium')
-            10 + 10 = <input name="ans"/>
-        @elseif($level === 'hard')
-        20 + 20 = <input name="ans"/>
+    <div class="d-flex flex-column">
+        <div class="content" style="{{$result == 'correct' ? 'color: green' : 'color: red'}}">
+            Your answer is <b>{{$result}}</b>. The result has been synchronized back to LMS!
+        </div>
+        @if(count($ranking) > 0)
+            <h3>Ranking</h3>
+            <table border="1">
+                <thead>
+                <td>Name</td>
+                <td>Grade</td>
+                </thead>
+                <tbody>
+                @foreach($ranking as $row)
+                    <tr>
+                        <td>{{$row['name']}}</td>
+                        <td style="text-align: right">{{$row['score']}}</td>
+                    </tr>
+                @endforeach
+                </tbody>
+
+            </table>
         @endif
-            <input type="submit" value="Submit answer">
-        </form>
     </div>
 </div>
 </body>

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ef32ad3c8a605e2b8ec32bdf35a816a",
+    "content-hash": "1b43746428d5d54443d8695dac194065",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -61,6 +61,42 @@
                 "source": "https://github.com/asm89/stack-cors/tree/v2.1.1"
             },
             "time": "2022-01-18T09:12:03+00:00"
+        },
+        {
+            "name": "bobngthedeveloper/lti-1p3-tool",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobnguyenthedeveloper/lti-1-3-php-library.git",
+                "reference": "b06633801d1e3fbc4104c52f23ec8990a8ec655f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bobnguyenthedeveloper/lti-1-3-php-library/zipball/b06633801d1e3fbc4104c52f23ec8990a8ec655f",
+                "reference": "b06633801d1e3fbc4104c52f23ec8990a8ec655f",
+                "shasum": ""
+            },
+            "require": {
+                "fproject/php-jwt": "^4.0",
+                "phpseclib/phpseclib": "^2.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "IMSGlobal\\LTI\\": "src/lti"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Bob Nguyen",
+                    "email": "bobngthedeveloper@gmail.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/bobnguyenthedeveloper/lti-1-3-php-library/tree/master"
+            },
+            "time": "2022-11-25T03:33:32+00:00"
         },
         {
             "name": "brick/math",
@@ -944,43 +980,6 @@
             "time": "2022-10-26T14:07:24+00:00"
         },
         {
-            "name": "imsglobal/lti-1p3-tool",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/IMSGlobal/lti-1-3-php-library.git",
-                "reference": "3a192de99f3783d76caea462b0d04db28569c123"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/IMSGlobal/lti-1-3-php-library/zipball/3a192de99f3783d76caea462b0d04db28569c123",
-                "reference": "3a192de99f3783d76caea462b0d04db28569c123",
-                "shasum": ""
-            },
-            "require": {
-                "fproject/php-jwt": "^4.0",
-                "phpseclib/phpseclib": "^2.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "IMSGlobal\\LTI\\": "src/lti"
-                }
-            },
-            "authors": [
-                {
-                    "name": "Martin Lenord",
-                    "email": "ims.m@rtin.dev"
-                }
-            ],
-            "support": {
-                "source": "https://github.com/IMSGlobal/lti-1-3-php-library/tree/master",
-                "issues": "https://github.com/IMSGlobal/lti-1-3-php-library/issues"
-            },
-            "time": "2020-06-03T16:10:05+00:00"
-        },
-        {
             "name": "laravel/framework",
             "version": "v7.30.6",
             "source": {
@@ -1144,16 +1143,16 @@
         },
         {
             "name": "laravel/tinker",
-            "version": "v2.7.2",
+            "version": "v2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/tinker.git",
-                "reference": "dff39b661e827dae6e092412f976658df82dbac5"
+                "reference": "5062061b4924af3392225dd482ca7b4d85d8b8ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/tinker/zipball/dff39b661e827dae6e092412f976658df82dbac5",
-                "reference": "dff39b661e827dae6e092412f976658df82dbac5",
+                "url": "https://api.github.com/repos/laravel/tinker/zipball/5062061b4924af3392225dd482ca7b4d85d8b8ef",
+                "reference": "5062061b4924af3392225dd482ca7b4d85d8b8ef",
                 "shasum": ""
             },
             "require": {
@@ -1206,9 +1205,9 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/tinker/issues",
-                "source": "https://github.com/laravel/tinker/tree/v2.7.2"
+                "source": "https://github.com/laravel/tinker/tree/v2.7.3"
             },
-            "time": "2022-03-23T12:38:24+00:00"
+            "time": "2022-11-09T15:11:38+00:00"
         },
         {
             "name": "laravel/ui",
@@ -1714,16 +1713,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.15.1",
+            "version": "v4.15.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "0ef6c55a3f47f89d7a374e6f835197a0b5fcf900"
+                "reference": "f59bbe44bf7d96f24f3e2b4ddc21cd52c1d2adbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/0ef6c55a3f47f89d7a374e6f835197a0b5fcf900",
-                "reference": "0ef6c55a3f47f89d7a374e6f835197a0b5fcf900",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/f59bbe44bf7d96f24f3e2b4ddc21cd52c1d2adbc",
+                "reference": "f59bbe44bf7d96f24f3e2b4ddc21cd52c1d2adbc",
                 "shasum": ""
             },
             "require": {
@@ -1764,9 +1763,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.1"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.2"
             },
-            "time": "2022-09-04T07:30:47+00:00"
+            "time": "2022-11-12T15:38:23+00:00"
         },
         {
             "name": "opis/closure",
@@ -5952,16 +5951,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "9.2.18",
+            "version": "9.2.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "12fddc491826940cf9b7e88ad9664cf51f0f6d0a"
+                "reference": "c77b56b63e3d2031bd8997fcec43c1925ae46559"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/12fddc491826940cf9b7e88ad9664cf51f0f6d0a",
-                "reference": "12fddc491826940cf9b7e88ad9664cf51f0f6d0a",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/c77b56b63e3d2031bd8997fcec43c1925ae46559",
+                "reference": "c77b56b63e3d2031bd8997fcec43c1925ae46559",
                 "shasum": ""
             },
             "require": {
@@ -6017,7 +6016,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.18"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.19"
             },
             "funding": [
                 {
@@ -6025,7 +6024,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-10-27T13:35:33+00:00"
+            "time": "2022-11-18T07:47:47+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -7388,7 +7387,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "imsglobal/lti-1p3-tool": 20
+        "bobngthedeveloper/lti-1p3-tool": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
@@ -7396,5 +7395,5 @@
         "php": "^7.2.5|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.0.0"
 }

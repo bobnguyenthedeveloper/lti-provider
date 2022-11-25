@@ -71,9 +71,9 @@
                 </div>
 
                 <div class="links">
-                    <a href="{{'/quiz-configure?level=easy&launch_id='.$launch_id}}">Easy</a>
-                    <a href="{{'/quiz-configure?level=medium&launch_id='.$launch_id}}">Medium</a>
-                    <a href="{{'/quiz-configure?level=hard&launch_id='.$launch_id}}">Hard</a>
+                    <a href="{{'/deeplink-select?level=easy&launch_id='.$launch_id}}">Easy</a>
+                    <a href="{{'/deeplink-select?level=medium&launch_id='.$launch_id}}">Medium</a>
+                    <a href="{{'/deeplink-select?level=hard&launch_id='.$launch_id}}">Hard</a>
                 </div>
             </div>
         </div>

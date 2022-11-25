@@ -18,17 +18,11 @@ use \IMSGlobal\LTI;
 */
 
 Route::post('lti-login', 'LTIController@login');
-
-Route::post('/login-success', 'LTIController@handleRedirectAfterLogin');
-
-//Auth::routes();
+Route::post('/redirector', 'LTIController@handleRedirectAfterLogin');
 
 Route::get('/', 'LTIController@greeting');
-Route::get('/quiz-configure', 'LTIController@selectQuizLevel');
+Route::get('/deeplink-select', 'LTIController@selectQuizLevel');
 Route::get('do-quiz', 'LTIController@doQuiz');
-Route::post('do-submit', 'LTIController@handleQuizSubmitted');
+Route::post('submit-quiz', 'LTIController@handleQuizSubmitted');
 Route::get('quiz-completed', 'LTIController@quizCompleted');
-
-//Route::middleware('auth')->group(function() {
-//
-//});
+Route::get('jwks', 'LTIController@jwks');

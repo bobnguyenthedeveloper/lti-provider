@@ -66,7 +66,7 @@
 <body>
 <div class="flex-center position-ref full-height">
     <div class="content">
-        <form action="/do-submit" method="post">
+        <form action="/submit-quiz" method="post">
             <input type="hidden" name="launch_id" value="{{$launch_id}}"/>
         <p>Quiz is running in {{$level}} mode!</p>
         Question:

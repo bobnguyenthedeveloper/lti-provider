@@ -1,4 +1,4 @@
-###A Laravel example of LTI Tool Provider (Tested with Moodle LMS)
+# A Laravel example of LTI Tool Provider (Tested with Moodle LMS)
 
 To run the project, follow these steps:
 1. Clone the source code

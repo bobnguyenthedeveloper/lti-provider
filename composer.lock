@@ -68,12 +68,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobnguyenthedeveloper/lti-1-3-php-library.git",
-                "reference": "b06633801d1e3fbc4104c52f23ec8990a8ec655f"
+                "reference": "addd7858ab6009b019cd682d33f22e1fcefeac6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobnguyenthedeveloper/lti-1-3-php-library/zipball/b06633801d1e3fbc4104c52f23ec8990a8ec655f",
-                "reference": "b06633801d1e3fbc4104c52f23ec8990a8ec655f",
+                "url": "https://api.github.com/repos/bobnguyenthedeveloper/lti-1-3-php-library/zipball/addd7858ab6009b019cd682d33f22e1fcefeac6a",
+                "reference": "addd7858ab6009b019cd682d33f22e1fcefeac6a",
                 "shasum": ""
             },
             "require": {
@@ -96,7 +96,7 @@
             "support": {
                 "source": "https://github.com/bobnguyenthedeveloper/lti-1-3-php-library/tree/master"
             },
-            "time": "2022-11-25T03:33:32+00:00"
+            "time": "2022-11-25T10:17:59+00:00"
         },
         {
             "name": "brick/math",
@@ -7395,5 +7395,5 @@
         "php": "^7.2.5|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.3.0"
 }

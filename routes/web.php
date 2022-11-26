@@ -19,10 +19,10 @@ use \IMSGlobal\LTI;
 
 Route::post('lti-login', 'LTIController@login');
 Route::post('/redirector', 'LTIController@handleRedirectAfterLogin');
+Route::get('jwks', 'LTIController@jwks');
 
 Route::get('/', 'LTIController@greeting');
 Route::get('/deeplink-select', 'LTIController@selectQuizLevel');
 Route::get('do-quiz', 'LTIController@doQuiz');
 Route::post('submit-quiz', 'LTIController@handleQuizSubmitted');
 Route::get('quiz-completed', 'LTIController@quizCompleted');
-Route::get('jwks', 'LTIController@jwks');

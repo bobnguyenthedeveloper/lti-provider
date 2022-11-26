@@ -13,7 +13,7 @@ class CreateLtiDeploymentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('lti_clients', function (Blueprint $table) {
+        Schema::create('lti_deployments', function (Blueprint $table) {
 			$table->string('deployment_id', 255);
 			$table->unsignedBigInteger('registration_id');
 	        $table->foreign('registration_id')->references('id')->on('lti_registrations')->onDelete('cascade');
